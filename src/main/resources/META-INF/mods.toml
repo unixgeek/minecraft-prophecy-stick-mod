@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="MIT License"
+
+[[mods]]
+modId="prophecy_stick"
+version="1.0.0"
+displayName="Prophecy Stick"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="Gunter Wambaugh"
+description='''
+Ore finder.
+'''
+
+[[dependencies.prophecy_stick]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

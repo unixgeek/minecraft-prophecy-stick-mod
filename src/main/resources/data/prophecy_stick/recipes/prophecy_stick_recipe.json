@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "34 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "minecraft:raw_iron"
+    },
+    "2": {
+      "item": "minecraft:raw_gold"
+    },
+    "3": {
+      "item": "minecraft:raw_copper"
+    },
+    "4": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "prophecy_stick:prophecy_stick",
+    "count": 1
+  }
+}

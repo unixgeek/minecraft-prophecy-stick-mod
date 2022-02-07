@@ -1,0 +1,43 @@
+{
+  "_fv": 24,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "stick",
+    "customModelName": "Normal",
+    "name": "Prophecy Stick",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": true,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 1,
+    "onRightClickedInAir": {
+      "name": "ProphecyStickChangeType"
+    },
+    "onRightClickedOnBlock": {
+      "name": "ProphecyStickChangeType"
+    },
+    "onEntitySwing": {
+      "name": "ProphecyStickFindOre"
+    },
+    "hasDispenseBehavior": false
+  }
+}
