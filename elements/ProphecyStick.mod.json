@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -24,20 +24,25 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "\"Ain't nobody got time to mine.\""
+    ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 1,
     "onRightClickedInAir": {
-      "name": "ProphecyStickChangeType"
+      "name": "PSToggleMode"
     },
-    "onRightClickedOnBlock": {
-      "name": "ProphecyStickChangeType"
+    "hasDispenseBehavior": false,
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
     },
-    "onEntitySwing": {
-      "name": "ProphecyStickFindOre"
-    },
-    "hasDispenseBehavior": false
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
   }
 }

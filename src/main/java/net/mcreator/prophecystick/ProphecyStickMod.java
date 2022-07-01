@@ -16,13 +16,17 @@ package net.mcreator.prophecystick;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fmllegacy.network.simple.SimpleChannel;
-import net.minecraftforge.fmllegacy.network.NetworkRegistry;
-import net.minecraftforge.fmllegacy.network.NetworkEvent;
+import net.minecraftforge.network.simple.SimpleChannel;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
+
+import net.mcreator.prophecystick.init.ProphecyStickModItems;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -38,6 +42,10 @@ public class ProphecyStickMod {
 	private static int messageID = 0;
 
 	public ProphecyStickMod() {
+
+		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		ProphecyStickModItems.REGISTRY.register(bus);
 
 	}
 

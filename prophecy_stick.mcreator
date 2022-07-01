@@ -9,47 +9,38 @@
       "registry_name": "prophecy_stick"
     },
     {
-      "name": "ProphecyStickChangeType",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "prophecy_stick_change_type",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ProphecyStickFindOre",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "prophecy_stick_find_ore",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "ProphecyStickRecipe",
       "type": "recipe",
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "prophecy_stick_recipe"
+    },
+    {
+      "name": "PSToggleMode",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "ps_toggle_mode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "prophecy_stick_mode",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -74,10 +65,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.17.1",
+    "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.prophecystick",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200120510
 }
