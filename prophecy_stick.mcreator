@@ -20,7 +20,7 @@
       "name": "PSToggleMode",
       "type": "procedure",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "ps_toggle_mode",
       "metadata": {
