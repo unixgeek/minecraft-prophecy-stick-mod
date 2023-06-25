@@ -12,12 +12,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.prophecystick.procedures.PSToggleModeProcedure;
+import net.mcreator.prophecystick.procedures.PSFindOreProcedure;
 
 import java.util.List;
 
@@ -58,5 +60,12 @@ public class ProphecyStickItem extends Item {
 
 		PSToggleModeProcedure.execute(entity);
 		return ar;
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		PSFindOreProcedure.execute(entity.level, entity.getX(), entity.getY(), entity.getZ(), entity);
+		return retval;
 	}
 }

@@ -6,7 +6,13 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "prophecy_stick"
+      "registry_name": "prophecy_stick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/prophecystick/item/ProphecyStickItem.java",
+          "src/main/resources/assets/prophecy_stick/models/item/prophecy_stick.json"
+        ]
+      }
     },
     {
       "name": "ProphecyStickRecipe",
@@ -14,7 +20,12 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "prophecy_stick_recipe"
+      "registry_name": "prophecy_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/prophecy_stick/recipes/prophecy_stick_recipe.json"
+        ]
+      }
     },
     {
       "name": "PSToggleMode",
@@ -28,6 +39,38 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PSFindOre",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ps_find_ore",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }

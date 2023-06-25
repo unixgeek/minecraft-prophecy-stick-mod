@@ -34,6 +34,9 @@
     "onRightClickedInAir": {
       "name": "PSToggleMode"
     },
+    "onEntitySwing": {
+      "name": "PSFindOre"
+    },
     "hasDispenseBehavior": false,
     "isFood": false,
     "nutritionalValue": 0,
